@@ -10,7 +10,7 @@ app.use(cors());
 // Middleware: Built-in Express JSON parser to automatically bind incoming payload streams onto req.body
 app.use(express.json());
 
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 /**
  * Baseline Endpoint: GET /ping
