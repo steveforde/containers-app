@@ -2,7 +2,7 @@ import axios from "axios";
 import type { DiaryEntry, NewDiaryEntry } from "./types";
 
 // Target endpoint URL routing traffic directly to the local backend service
-const baseUrl = "http://localhost:3001/api/diaries";
+const baseUrl = '/api/diaries';
 
 /**
  * Async API Client Service: GET

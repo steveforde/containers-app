@@ -9,7 +9,7 @@
   "scripts": {
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "start": "node --experimental-transform-types  src/index.ts",
+    "start": "node --experimental-transform-types src/index.ts",
     "lint": "eslint ."
   },
   "devDependencies": {

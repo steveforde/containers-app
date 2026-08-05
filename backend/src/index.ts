@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import diaryRouter from "./routes/diaries";
+import diariesRouter from './routes/diaries';
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.get("/ping", (_req, res) => {
 });
 
 // Routing Layer: Bind the complete diary system endpoints behind the standard '/api/diaries' prefix path
-app.use("/api/diaries", diaryRouter);
+app.use("/api/diaries", diariesRouter);
 
 // Start Server: Bind the application to listen for network traffic requests on the designated port
 app.listen(PORT, () => {
